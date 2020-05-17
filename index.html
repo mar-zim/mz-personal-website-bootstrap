@@ -15,8 +15,9 @@
   </head>
 
   <body class="container py-3">
+    <!-- header with nav (flexbox)-->
     <header
-      class="shadow d-flex flex-column flex-md-row align-items-md-end justify-content-md-between p-3 my-3"
+      class="shadow d-flex flex-column flex-md-row align-items-md-center justify-content-md-between p-3 my-3"
     >
       <h1>
         Mariuccia Zimmermann
@@ -28,64 +29,96 @@
     </header>
 
     <main>
-      <div class="row shadow p-3 my-3">
-        <div class="col-12 col-md-4">
-          <img
-            class="img-fluid my-1"
-            src="/img/mariuccia.JPG"
-            alt="Website author at the beach during sunset"
-          />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos,
-            perferendis?
-          </p>
+      <!-- picture  & buttons (row with columns) -->
+      <!-- no-gutters removes the built-in margin around row with columns -->
+      <div class="row shadow p-3 my-3 no-gutters">
+        <!-- figure used for imgae & caption -->
+        <div class="col-12 col-md-4 mr-4">
+          <figure class="figure">
+            <img
+              src="/img/mariuccia3.JPG"
+              class="figure-img img-fluid rounded"
+              alt="Website author at the beach flying a kite"
+            />
+            <figcaption class="figure-caption">
+              If I am not here, you find me at the beach.
+            </figcaption>
+          </figure>
         </div>
 
-        <div class="col col-md-8">
-          <section>
-            <h2>Education</h2>
-            <button type="button" class="btn btn-outline-dark btn-sm mr-1">
-              Lorem</button
-            ><button type="button" class="btn btn-outline-dark btn-sm mr-1">
-              Lorem</button
-            ><button type="button" class="btn btn-outline-dark btn-sm mr-1">
-              Lorem
-            </button>
+        <div class="col col-md mt-4">
+          <h2>Work</h2>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Online Marketing
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Brand Management
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Project Management
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Google Analytics
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            CRM
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Hubspot
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Salesforce
+          </button>
 
-            <h2>Hobbies</h2>
-            <button type="button" class="btn btn-outline-dark btn-sm mr-1">
-              Lorem</button
-            ><button type="button" class="btn btn-outline-dark btn-sm mr-1">
-              Lorem</button
-            ><button type="button" class="btn btn-outline-dark btn-sm mr-1">
-              Lorem</button
-            ><button type="button" class="btn btn-outline-dark btn-sm mr-1">
-              Lorem
-            </button>
-          </section>
+          <h2 class="mt-4">Hobbies</h2>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Travelling
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Camping
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Hiking
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Surfing
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            DIY
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Photography
+          </button>
+          <button type="button" class="btn btn-outline-dark btn-sm mb-1">
+            Board games
+          </button>
         </div>
       </div>
 
+      <!-- contact section (flexbox) -->
       <section
-        class="shadow d-flex flex-column flex-md-row p-3 my-3 justify-content-md-between"
+        class="shadow d-flex flex-column flex-md-row p-3 my-3 justify-content-md-between lead"
         id="contact"
       >
-        <span class="mr-2">Tel: 126 83674940</span>
-        <span class="">Email: xyz@gmx.de</span>
+        <span class="mr-md-2">Tel: +49 126 83674940</span>
+        <span class="mt-xs-2"
+          >Email: <a href="mailto:abc@gmx.de">abc@gmx.de</a></span
+        >
       </section>
 
+      <!-- profiles (cards)-->
       <div class="card-deck">
         <div class="card">
           <img
-            src="/img/GitHub_Logo.png"
-            class="card-img-top px-3"
+            src="/img/GitHub_Logo.svg"
+            class="card-img-top p-5"
             alt="GitHub Logo"
           />
           <div class="card-body">
             <h5 class="card-title">GitHub</h5>
             <p>
               <a
-                href="http://https://github.com/mar-zim"
+                href="https://github.com/mar-zim"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="card-text"
@@ -98,15 +131,15 @@
 
         <div class="card">
           <img
-            src="/img/codepen.png"
-            class="card-img-top py-4 px-3"
+            src="/img/Codepen_black_Logo.svg"
+            class="card-img-top p-5"
             alt="CodePen logo"
           />
           <div class="card-body">
             <h5 class="card-title">CodePen</h5>
             <p class="card-text">
               <a
-                href="http://https://codepen.io/mar-zim"
+                href="https://codepen.io/mar-zim"
                 target="_blank"
                 rel="noopener noreferrer"
                 ><small class="text-muted">View my CodePen profile</small></a
@@ -116,8 +149,8 @@
         </div>
         <div class="card">
           <img
-            src="/img/LI-Logo.png"
-            class="card-img-top py-4 px-3"
+            src="/img/LinkedIn_Logo.svg"
+            class="card-img-top p-5 my-2"
             alt="LinkedIn logo"
           />
           <div class="card-body">
@@ -134,7 +167,8 @@
         </div>
       </div>
 
-      <div class="row my-3 shadow">
+      <!-- about and bio (row with col) -->
+      <div class="row my-3 shadow no-gutters">
         <section id="about" class="col-12 col-md-6 p-3">
           <h2>About myself</h2>
           <p>
@@ -145,22 +179,30 @@
           </p>
         </section>
 
-        <section id="biography" class="col px-3">
+        <section id="biography" class="col p-3">
           <h2>Biography</h2>
           <table class="table table-hover">
             <tbody>
               <tr>
-                <th scope="row">2017</th>
-                <td>Mark</td>
+                <th scope="row">2018-2019</th>
+                <td>CRM & Automation Marketing at AVADO Learning</td>
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
+                <th scope="row">2013-2017</th>
+                <td>
+                  Marketing & Sales at Philips GmbH
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2009-2013</th>
+                <td>
+                  B.Sc. Industrial Engineering
+                </td>
               </tr>
               <tr>
                 <th scope="row">2007</th>
                 <td>
-                  Abitur und wenn ich hier dann ganz viel Text reinschreibe
+                  Abitur
                 </td>
               </tr>
             </tbody>
@@ -169,6 +211,7 @@
       </div>
     </main>
 
-    <footer id="copyright">Footer Text</footer>
+    <!-- footer -->
+    <footer id="copyright" class="small ml-5">&copy; Footer Text</footer>
   </body>
 </html>
